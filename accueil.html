@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+ 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <title>Akasha Portfolio</title>
+</head>
+<body class="text-white scroll-smooth">
+    <header class="fixed top-0 left-0 w-full z-10 bg-dark-slate flex items-center justify-between lg:px-32 px-2 py-2" id="header">
+       <div>
+    <a href="/accueil.html">
+      <img src="/images/Logo_dev.svg" alt="mon logo" class="lg:w-52 w-36">
+    </a>
+  </div>
+  
+  <!-- Menu principal -->
+  <nav class="hidden sm:flex justify-between gap-4 items-center">
+    <a href="/accueil.html" class="menu-link">Accueil</a>
+    <a href="#a-propos" class="menu-link ancre-link">À propos</a>
+    <a href="/projet.html" class="menu-link ancre-link">Mes projets</a>
+  </nav>
+  
+  <!-- Menu hamburger (mobile only) -->
+  <div class="sm:hidden">
+    <button id="mobile-menu-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
+        <path d="M4 5h16M4 12h16M4 19h16" stroke="white" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Menu mobile -->
+  <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-dark-slate text-white flex flex-col items-center justify-center gap-8 transform -translate-y-full transition-transform duration-500 ease-in-out z-10 sm:hidden">
+       <!-- Bouton de fermeture -->
+     <button id="mobile-menu-close" class="absolute top-4 right-4 text-white hover:text-accent transition">
+       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+       <path stroke-linecap="round" stroke-width="4" d="M6 18L18 6M6 6l12 12" />
+       </svg>
+     </button>
+    <a href="#accueil" class="text-2xl menu-link mobile-link">Accueil</a>
+    <a href="#competences" class="text-2xl menu-link mobile-link">Compétences</a>
+    <a href="#a-propos" class="text-2xl menu-link mobile-link">À propos</a>
+    <a href="/document/CV_Rayonnant_Nyonsa.pdf" target="_blank" rel="noopener" rel="noopener" class="text-accent pt-2 text-2xl font-bold flex items-center hover:text-white transition duration-300 ease-in-out">
+      MON CV
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" 
+        role="img" class="iconify iconify--iconoir" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" 
+        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
+        d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2M7 7h10M7 12h10M7 17h6" class="mb-px"></path>
+      </svg>
+    </a>
+  </nav>
+    </header>
+
+    <!--main-->
+    <main class="lg:px-32 px-2">
+    
+    <!--Hero section-->
+    <section id="accueil">
+      <div class="lg:flex lg:justify-between lg:items-center">
+    <div class="fade-in pt-32 lg:mx-0 lg:text-left text-center">
+       <h2 class="card lg:text-8xl text-5xl md:text-6xl text-outline-white font-black">Je suis</h2>
+       <h2 class="card lg:text-8xl text-5xl md:text-6xl font-black ">Devellopeur</h2>
+       <h2 class="card lg:text-8xl text-5xl md:text-6xl font-black color-accent">Fullstack</h2>
+       <p class="lg:w-[60%] md:w-[70%] w-64 lg:mx-0 lg:text-left mx-auto text-center lg:text-xl pt-4">Entre logique et créativité, je bâtis des interfaces qui parlent autant aux humains qu’aux machines</p>
+     <div class="pt-12 flex flex-col items-center lg:flex-row lg:items-center lg:justify-start lg:gap-4">
+       <a href="#form">
+         <button class="accent p-4 hover:bg-orange-800 transition duration-300 ease-in-out">
+           <span class="font-bold">ECRIVEZ-MOI</span>
+         </button>
+       </a>
+       <a href="/document/CV_Rayonnant_Nyonsa.pdf" target="_blank" rel="noopener" rel="noopener" class="text-accent lg:pt-0 pt-8 font-bold flex items-center gap-1 hover:text-white transition duration-300 ease-in-out">
+         MON CV
+         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" 
+           role="img" class="iconify iconify--iconoir" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" 
+           stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
+           d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2M7 7h10M7 12h10M7 17h6" class="mb-px"></path>
+         </svg>
+       </a>
+     </div>
+ </div>
+ <div class="fade-in text-center lg:text-left">
+   <img src="/images/monProfil.png" alt="ma photo de profil" width="500" height="500" class="mx-auto block">
+ </div>
+ 
+  </div>
+    </section>
+    <!--End Hero section-->
+
+      <div class="lg:pt-32 lg:pb-40 pt-24 pb-32">
+      </div>
+
+    <!--About section-->
+    <section class="" id="a-propos">
+      <div class="lg:flex lg:justify-between px-2 text-center lg:items-center  ">
+    <div class="fade-in">
+      <h2 class="lg:text-6xl lg:mx-0 lg:text-left lg:w-[75%] text-2xl font-black">À PROPOS DE MOI </h2>
+      <p class="font-bold lg:mx-0 lg:text-left pt-4">SUIVEZ-MOI SUR</p>
+      <div class="flex gap-2 items-center justify-center lg:justify-start pt-2 pb-4">
+    <a href="https://www.instagram.com/rayonnant_akasha/" target="_blank" class="hover:scale-105 transition">
+     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55" viewBox="0,0,256,256">
+       <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+     </svg>
+    </a>
+  <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/rayonnant-nyonsa-386b41274/" target="_blank" class="hover:scale-105 transition">
+     <svg class="themed-stroke-icon" width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg"><desc>Rayonnant Nyonsa profil Linkdin</desc><path d="M18.7311 45.3333V26.6667M56.0645 21.3333V42.6667C56.0645 46.2029 54.6597 49.5943 52.1592 52.0948C49.6587 54.5952 46.2673 56 42.7311 56H21.3978C17.8616 56 14.4702 54.5952 11.9697 52.0948C9.46921 49.5943 8.06445 46.2029 8.06445 42.6667V21.3333C8.06445 17.7971 9.46921 14.4057 11.9697 11.9052C14.4702 9.40476 17.8616 8 21.3978 8H42.7311C46.2673 8 49.6587 9.40476 52.1592 11.9052C54.6597 14.4057 56.0645 17.7971 56.0645 21.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M29.3978 45.3333V36.6667M29.3978 36.6667V26.6667M29.3978 36.6667C29.3978 26.6667 45.3978 26.6667 45.3978 36.6667V45.3333M18.7311 18.6933L18.7578 18.664" stroke="white" stroke-width="1.5" stroke-linecap="round" 
+       stroke-linejoin="round"></path></svg>
+    </a>
+      </div>
+    </div>
+    <div class="darker-slate lg:text-start lg:w-[40%] fade-in lg:p-6 p-6 shadow-xl backdrop-opacity-60">
+      <p class="text-xl">
+        Salut ! Je suis  Rayonnant  Nyonsa
+      </p>
+      <br>
+      <p class="text-xl w-md ">
+        Je suis <span class="color-accent">Developpeur Web FullStack</span>
+        Passionné par le web, je conçois des maquettes percutantes, 
+        des bases de données solides et des sites internet sur mesure, alliant esthétique et performance.
+      </p>
+      <br>
+      <p class="text-xl w-md">
+        Je suis toujours en train de développer mes compétences et d'apprendre quelque chose de nouveau. 
+        J'ai une soif de connaissances et un désir de comprendre comment les choses fonctionnent ; 
+        je suis un homme de contact, un bricoleur, un amoureux de la technologie et des sciences.
+      </p>
+    </div>
+  </div>
+    </section>
+    <!--End of About section-->
+    <div class="lg:pt-32 lg:pb-40 pt-24 pb-32">
+    </div>
+
+    <!-- skills section-->
+    <section class="" id="competences">
+      <div class="container fade-in mx-auto px-6">
+    <h2 class="font-extrabold text-center text-2xl lg:text-6xl">MES COMPÉTENCES </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-24">
+        <!-- Compétence 1 -->
+        <div class="darker-slate fade-in p-6 shadow-xl backdrop-opacity-60">
+            <div class="flex mb-4 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 264"><path d="M255.008 158.086c-1.535-4.649-5.556-7.887-10.756-8.664c-2.452-.366-5.26-.21-8.583.475c-5.792 1.195-10.089 1.65-13.225 1.738c11.837-19.985 21.462-42.775 27.003-64.228c8.96-34.689 4.172-50.492-1.423-57.64C233.217 10.847 211.614.683 185.552.372c-13.903-.17-26.108 2.575-32.475 4.549c-5.928-1.046-12.302-1.63-18.99-1.738c-12.537-.2-23.614 2.533-33.079 8.15c-5.24-1.772-13.65-4.27-23.362-5.864c-22.842-3.75-41.252-.828-54.718 8.685C6.622 25.672-.937 45.684.461 73.634c.444 8.874 5.408 35.874 13.224 61.48c4.492 14.718 9.282 26.94 14.237 36.33c7.027 13.315 14.546 21.156 22.987 23.972c4.731 1.576 13.327 2.68 22.368-4.85c1.146 1.388 2.675 2.767 4.704 4.048c2.577 1.625 5.728 2.953 8.875 3.74c11.341 2.835 21.964 2.126 31.027-1.848c.056 1.612.099 3.152.135 4.482c.06 2.157.12 4.272.199 6.25c.537 13.374 1.447 23.773 4.143 31.049c.148.4.347 1.01.557 1.657c1.345 4.118 3.594 11.012 9.316 16.411c5.925 5.593 13.092 7.308 19.656 7.308c3.292 0 6.433-.432 9.188-1.022c9.82-2.105 20.973-5.311 29.041-16.799c7.628-10.86 11.336-27.217 12.007-52.99q.13-1.094.244-2.088l.16-1.362l1.797.158l.463.031c10.002.456 22.232-1.665 29.743-5.154c5.935-2.754 24.954-12.795 20.476-26.351"/><path fill="#336791" d="M237.906 160.722c-29.74 6.135-31.785-3.934-31.785-3.934c31.4-46.593 44.527-105.736 33.2-120.211c-30.904-39.485-84.399-20.811-85.292-20.327l-.287.052c-5.876-1.22-12.451-1.946-19.842-2.067c-13.456-.22-23.664 3.528-31.41 9.402c0 0-95.43-39.314-90.991 49.444c.944 18.882 27.064 142.873 58.218 105.422c11.387-13.695 22.39-25.274 22.39-25.274c5.464 3.63 12.006 5.482 18.864 4.817l.533-.452c-.166 1.7-.09 3.363.213 5.332c-8.026 8.967-5.667 10.541-21.711 13.844c-16.235 3.346-6.698 9.302-.471 10.86c7.549 1.887 25.013 4.561 36.813-11.958l-.47 1.885c3.144 2.519 5.352 16.383 4.982 28.952c-.37 12.568-.617 21.197 1.86 27.937c2.479 6.74 4.948 21.905 26.04 17.386c17.623-3.777 26.756-13.564 28.027-29.89c.901-11.606 2.942-9.89 3.07-20.267l1.637-4.912c1.887-15.733.3-20.809 11.157-18.448l2.64.232c7.99.363 18.45-1.286 24.589-4.139c13.218-6.134 21.058-16.377 8.024-13.686z"/><path fill="#fff" d="M108.076 81.525c-2.68-.373-5.107-.028-6.335.902c-.69.523-.904 1.129-.962 1.546c-.154 1.105.62 2.327 1.096 2.957c1.346 1.784 3.312 3.01 5.258 3.28q.423.059.842.058c3.245 0 6.196-2.527 6.456-4.392c.325-2.336-3.066-3.893-6.355-4.35m88.784.073c-.256-1.831-3.514-2.353-6.606-1.923c-3.088.43-6.082 1.824-5.832 3.659c.2 1.427 2.777 3.863 5.827 3.863q.387 0 .78-.054c2.036-.282 3.53-1.575 4.24-2.32c1.08-1.136 1.706-2.402 1.591-3.225"/><path fill="#fff" d="M247.802 160.025c-1.134-3.429-4.784-4.532-10.848-3.28c-18.005 3.716-24.453 1.142-26.57-.417c13.995-21.32 25.508-47.092 31.719-71.137c2.942-11.39 4.567-21.968 4.7-30.59c.147-9.463-1.465-16.417-4.789-20.665c-13.402-17.125-33.072-26.311-56.882-26.563c-16.369-.184-30.199 4.005-32.88 5.183c-5.646-1.404-11.801-2.266-18.502-2.376c-12.288-.199-22.91 2.743-31.704 8.74c-3.82-1.422-13.692-4.811-25.765-6.756c-20.872-3.36-37.458-.814-49.294 7.571c-14.123 10.006-20.643 27.892-19.38 53.16c.425 8.501 5.269 34.653 12.913 59.698c10.062 32.964 21 51.625 32.508 55.464c1.347.449 2.9.763 4.613.763c4.198 0 9.345-1.892 14.7-8.33a530 530 0 0 1 20.261-22.926c4.524 2.428 9.494 3.784 14.577 3.92q.016.2.035.398a118 118 0 0 0-2.57 3.175c-3.522 4.471-4.255 5.402-15.592 7.736c-3.225.666-11.79 2.431-11.916 8.435c-.136 6.56 10.125 9.315 11.294 9.607c4.074 1.02 7.999 1.523 11.742 1.523c9.103 0 17.114-2.992 23.516-8.781c-.197 23.386.778 46.43 3.586 53.451c2.3 5.748 7.918 19.795 25.664 19.794c2.604 0 5.47-.303 8.623-.979c18.521-3.97 26.564-12.156 29.675-30.203c1.665-9.645 4.522-32.676 5.866-45.03c2.836.885 6.487 1.29 10.434 1.289c8.232 0 17.731-1.749 23.688-4.514c6.692-3.108 18.768-10.734 16.578-17.36m-44.106-83.48c-.061 3.647-.563 6.958-1.095 10.414c-.573 3.717-1.165 7.56-1.314 12.225c-.147 4.54.42 9.26.968 13.825c1.108 9.22 2.245 18.712-2.156 28.078a37 37 0 0 1-1.95-4.009c-.547-1.326-1.735-3.456-3.38-6.404c-6.399-11.476-21.384-38.35-13.713-49.316c2.285-3.264 8.084-6.62 22.64-4.813m-17.644-61.787c21.334.471 38.21 8.452 50.158 23.72c9.164 11.711-.927 64.998-30.14 110.969a171 171 0 0 0-.886-1.117l-.37-.462c7.549-12.467 6.073-24.802 4.759-35.738c-.54-4.488-1.05-8.727-.92-12.709c.134-4.22.692-7.84 1.232-11.34c.663-4.313 1.338-8.776 1.152-14.037c.139-.552.195-1.204.122-1.978c-.475-5.045-6.235-20.144-17.975-33.81c-6.422-7.475-15.787-15.84-28.574-21.482c5.5-1.14 13.021-2.203 21.442-2.016M66.674 175.778c-5.9 7.094-9.974 5.734-11.314 5.288c-8.73-2.912-18.86-21.364-27.791-50.624c-7.728-25.318-12.244-50.777-12.602-57.916c-1.128-22.578 4.345-38.313 16.268-46.769c19.404-13.76 51.306-5.524 64.125-1.347c-.184.182-.376.352-.558.537c-21.036 21.244-20.537 57.54-20.485 59.759c-.002.856.07 2.068.168 3.735c.362 6.105 1.036 17.467-.764 30.334c-1.672 11.957 2.014 23.66 10.111 32.109a36 36 0 0 0 2.617 2.468c-3.604 3.86-11.437 12.396-19.775 22.426m22.479-29.993c-6.526-6.81-9.49-16.282-8.133-25.99c1.9-13.592 1.199-25.43.822-31.79c-.053-.89-.1-1.67-.127-2.285c3.073-2.725 17.314-10.355 27.47-8.028c4.634 1.061 7.458 4.217 8.632 9.645c6.076 28.103.804 39.816-3.432 49.229c-.873 1.939-1.698 3.772-2.402 5.668l-.546 1.466c-1.382 3.706-2.668 7.152-3.465 10.424c-6.938-.02-13.687-2.984-18.819-8.34m1.065 37.9c-2.026-.506-3.848-1.385-4.917-2.114c.893-.42 2.482-.992 5.238-1.56c13.337-2.745 15.397-4.683 19.895-10.394c1.031-1.31 2.2-2.794 3.819-4.602l.002-.002c2.411-2.7 3.514-2.242 5.514-1.412c1.621.67 3.2 2.702 3.84 4.938c.303 1.056.643 3.06-.47 4.62c-9.396 13.156-23.088 12.987-32.921 10.526m69.799 64.952c-16.316 3.496-22.093-4.829-25.9-14.346c-2.457-6.144-3.665-33.85-2.808-64.447c.011-.407-.047-.8-.159-1.17a15.4 15.4 0 0 0-.456-2.162c-1.274-4.452-4.379-8.176-8.104-9.72c-1.48-.613-4.196-1.738-7.46-.903c.696-2.868 1.903-6.107 3.212-9.614l.549-1.475c.618-1.663 1.394-3.386 2.214-5.21c4.433-9.848 10.504-23.337 3.915-53.81c-2.468-11.414-10.71-16.988-23.204-15.693c-7.49.775-14.343 3.797-17.761 5.53c-.735.372-1.407.732-2.035 1.082c.954-11.5 4.558-32.992 18.04-46.59c8.489-8.56 19.794-12.788 33.568-12.56c27.14.444 44.544 14.372 54.366 25.979c8.464 10.001 13.047 20.076 14.876 25.51c-13.755-1.399-23.11 1.316-27.852 8.096c-10.317 14.748 5.644 43.372 13.315 57.129c1.407 2.521 2.621 4.7 3.003 5.626c2.498 6.054 5.732 10.096 8.093 13.046c.724.904 1.426 1.781 1.96 2.547c-4.166 1.201-11.649 3.976-10.967 17.847c-.55 6.96-4.461 39.546-6.448 51.059c-2.623 15.21-8.22 20.875-23.957 24.25m68.104-77.936c-4.26 1.977-11.389 3.46-18.161 3.779c-7.48.35-11.288-.838-12.184-1.569c-.42-8.644 2.797-9.547 6.202-10.503c.535-.15 1.057-.297 1.561-.473q.469.383 1.032.756c6.012 3.968 16.735 4.396 31.874 1.271l.166-.033c-2.042 1.909-5.536 4.471-10.49 6.772"/></svg>
+              <img width="48" height="48" src="https://img.icons8.com/color/48/mysql-logo.png" alt="mysql-logo"/>
+            </div>
+            <p class="text-gray-200 text-sm text-center  max-w-xs mx-auto">
+              Grâce à ma maîtrise de la modélisation et de la structuration des données, 
+              je conçois des bases solides, évolutives et parfaitement adaptées aux besoins des applications,
+               assurant performance et fiabilité à long terme.
+            </p>
+        </div>
+        
+        <!-- Compétence 2 -->
+        <div class="darker-slate fade-in p-6 shadow-xl backdrop-opacity-60">
+            <div class="flex mb-4 items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                <path fill="#e64a19" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path><path fill="#7c4dff" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path><path fill="#66bb6a" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path><path fill="#ff7043" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path><circle cx="32" cy="24" r="7" fill="#29b6f6"></circle>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                  <linearGradient id="N8aMJ-jZ4-cfldZrsnvhda_iWw83PVcBpLw_gr1" x1="38.263" x2="10.15" y1="1373.62" y2="1342.615" gradientTransform="translate(0 -1333.89)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#823af3"></stop><stop offset=".36" stop-color="#4b66e1"></stop><stop offset=".906" stop-color="#01f1c4"></stop></linearGradient><path fill="url(#N8aMJ-jZ4-cfldZrsnvhda_iWw83PVcBpLw_gr1)" fill-rule="evenodd" d="M44,24c0,11.045-8.955,20-20,20S4,35.045,4,24	S12.955,4,24,4S44,12.955,44,24z" clip-rule="evenodd"></path><path fill="#fff" fill-rule="evenodd" d="M29.194,26.962c-0.835,0.915-2.007,1.378-2.556,1.378	c-0.635,0-0.982-0.389-1.053-0.974c-0.024-0.224-0.016-0.45,0.024-0.673c0.21-1.31,0.692-2.124,0.662-2.372	c-0.009-0.071-0.049-0.106-0.101-0.106c-0.406,0-1.83,1.47-2.046,2.443l-0.168,0.779c-0.11,0.549-0.648,0.902-1.018,0.902	c-0.177,0-0.311-0.088-0.334-0.283c-0.007-0.089,0-0.178,0.021-0.266l0.079-0.41c-0.768,0.574-1.596,0.962-1.984,0.962	c-0.53,0-0.827-0.283-0.933-0.709c-0.35,0.461-0.813,0.709-1.306,0.709c-0.63,0-1.237-0.417-1.528-1.034	c-0.415,0.466-0.907,0.922-1.496,1.299c-0.869,0.55-1.836,0.992-2.982,0.992c-1.058,0-1.956-0.566-2.453-1.026	c-0.737-0.69-1.126-1.718-1.241-2.656c-0.362-2.957,1.438-6.834,4.227-8.533c0.64-0.39,1.357-0.584,2.008-0.584	c1.34,0,2.34,0.958,2.48,2.104c0.126,1.032-0.286,1.924-1.431,2.501c-0.584,0.296-0.874,0.282-0.965,0.141	c-0.061-0.094-0.026-0.254,0.091-0.351c1.076-0.899,1.096-1.637,0.97-2.677c-0.082-0.669-0.522-1.098-1.016-1.098	c-2.115,0-5.149,4.745-4.727,8.197c0.165,1.346,0.99,2.904,2.682,2.904c0.564,0,1.162-0.159,1.694-0.425	c0.928-0.474,1.453-0.85,1.98-1.464c-0.13-1.596,1.24-3.6,3.278-3.6c0.882,0,1.612,0.354,1.698,1.062	c0.108,0.885-0.646,1.062-0.928,1.062c-0.247,0-0.643-0.071-0.671-0.301c-0.03-0.248,0.534-0.106,0.464-0.673	c-0.043-0.354-0.411-0.478-0.763-0.478c-1.269,0-1.97,1.77-1.835,2.869c0.061,0.496,0.315,0.991,0.774,0.991	c0.37,0,0.904-0.531,1.109-1.31c0.13-0.531,0.632-0.885,1.003-0.885c0.194,0,0.328,0.088,0.352,0.283	c0.008,0.071,0.002,0.16-0.021,0.266c-0.042,0.23-0.219,0.996-0.21,1.154c0.006,0.138,0.086,0.328,0.326,0.328	c0.19,0,0.89-0.378,1.538-0.958c0.203-1.051,0.454-2.351,0.474-2.454c0.079-0.426,0.232-0.865,1.096-0.865	c0.177,0,0.311,0.088,0.337,0.301c0.008,0.07,0.002,0.16-0.021,0.266l-0.242,1.093c0.758-1.01,1.936-1.752,2.642-1.752	c0.3,0,0.531,0.158,0.57,0.478c0.022,0.178-0.03,0.478-0.147,0.814c-0.251,0.69-0.533,1.727-0.72,2.62	c-0.04,0.19,0.026,0.476,0.373,0.476c0.277,0,1.166-0.339,1.885-1.288c-0.005-0.134-0.007-0.27-0.007-0.408	c0-0.744,0.053-1.346,0.194-1.787c0.141-0.461,0.723-0.902,1.11-0.902c0.194,0,0.335,0.106,0.335,0.318	c0,0.071-0.018,0.16-0.053,0.248c-0.264,0.779-0.405,1.506-0.405,2.231c0,0.407,0.088,1.062,0.177,1.398	c0.018,0.071,0.034,0.142,0.105,0.142c0.123,0,0.952-0.814,1.551-1.806c-0.53-0.337-0.829-0.956-0.829-1.718	c0-1.274,0.758-1.93,1.498-1.93c0.582,0,1.11,0.425,1.11,1.274c0,0.532-0.212,1.134-0.51,1.718c0,0,0.123,0.018,0.176,0.018	c0.458,0,0.811-0.213,1.006-0.443c0.088-0.1,0.17-0.178,0.248-0.224c0.59-0.713,1.455-1.228,2.47-1.228	c0.864,0,1.61,0.337,1.696,1.045c0.11,0.902-0.661,1.08-0.926,1.08c-0.264,0-0.661-0.071-0.689-0.301s0.551-0.106,0.484-0.654	c-0.043-0.354-0.413-0.496-0.766-0.496c-1.182,0-1.994,1.576-1.838,2.85c0.062,0.514,0.299,1.01,0.758,1.01	c0.37,0,0.923-0.532,1.127-1.31c0.131-0.514,0.632-0.885,1.002-0.885c0.176,0,0.328,0.088,0.354,0.301	c0.013,0.106-0.03,0.337-0.227,1.168c-0.081,0.354-0.097,0.655-0.066,0.903c0.063,0.514,0.298,0.85,0.516,1.045	c0.079,0.07,0.126,0.158,0.132,0.213c0.017,0.142-0.091,0.266-0.267,0.266c-0.053,0-0.123,0-0.181-0.035	c-0.908-0.372-1.285-0.991-1.391-1.576c-0.35,0.442-0.814,0.69-1.29,0.69c-0.811,0-1.603-0.709-1.715-1.629	c-0.046-0.378-0.001-0.785,0.123-1.184c-0.329,0.203-0.683,0.316-1.001,0.316c-0.106,0-0.194,0-0.299-0.018	c-0.793,1.15-1.622,1.947-2.257,2.302c-0.264,0.142-0.51,0.213-0.687,0.213c-0.142,0-0.3-0.035-0.37-0.159	C29.367,27.91,29.258,27.474,29.194,26.962L29.194,26.962z M32.067,23.191c0,0.496,0.246,1.01,0.564,1.346	c0.124-0.337,0.194-0.673,0.194-1.01c0-0.638-0.247-0.921-0.441-0.921C32.155,22.606,32.067,22.926,32.067,23.191z" clip-rule="evenodd"></path>
+                  </svg>
+            </div>
+            <p class="text-gray-200 text-sm text-center  max-w-xs mx-auto">
+              Je maîtrise la conception de maquettes et la création d'interfaces utilisateur de qualité, assurant des expériences visuelles exceptionnelles pour chaque projet.
+            </p>
+        </div>
+        
+        <!-- Compétence 3 -->
+        <div class="darker-slate fade-in p-6 shadow-xl backdrop-opacity-60">
+            <div class="flex mb-4 justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                <path fill="#fff" d="M24 4.050000000000001A19.95 19.95 0 1 0 24 43.95A19.95 19.95 0 1 0 24 4.050000000000001Z"></path><path fill="#01579b" d="M8.001,24c0,6.336,3.68,11.806,9.018,14.4L9.385,17.488C8.498,19.479,8.001,21.676,8.001,24z M34.804,23.194c0-1.977-1.063-3.35-1.67-4.412c-0.813-1.329-1.576-2.437-1.576-3.752c0-1.465,1.471-2.84,3.041-2.84 c0.071,0,0.135,0.006,0.206,0.008C31.961,9.584,28.168,8,24.001,8c-5.389,0-10.153,2.666-13.052,6.749 c0.228,0.074,0.307,0.039,0.611,0.039c1.669,0,4.264-0.2,4.264-0.2c0.86-0.057,0.965,1.212,0.099,1.316c0,0-0.864,0.105-1.828,0.152 l5.931,17.778l3.5-10.501l-2.603-7.248c-0.861-0.046-1.679-0.152-1.679-0.152c-0.862-0.056-0.762-1.375,0.098-1.316 c0,0,2.648,0.2,4.217,0.2c1.675,0,4.264-0.2,4.264-0.2c0.861-0.057,0.965,1.212,0.104,1.316c0,0-0.87,0.105-1.832,0.152l5.891,17.61 l1.599-5.326C34.399,26.289,34.804,24.569,34.804,23.194z M24.281,25.396l-4.8,13.952c1.436,0.426,2.95,0.652,4.52,0.652 c1.861,0,3.649-0.324,5.316-0.907c-0.04-0.071-0.085-0.143-0.118-0.22L24.281,25.396z M38.043,16.318 c0.071,0.51,0.108,1.059,0.108,1.645c0,1.628-0.306,3.451-1.219,5.737l-4.885,14.135C36.805,35.063,40,29.902,40,24 C40,21.219,39.289,18.604,38.043,16.318z"></path><path fill="#01579b" d="M4,24c0,11.024,8.97,20,19.999,20C35.03,44,44,35.024,44,24S35.03,4,24,4S4,12.976,4,24z M5.995,24 c0-9.924,8.074-17.999,18.004-17.999S42.005,14.076,42.005,24S33.929,42.001,24,42.001C14.072,42.001,5.995,33.924,5.995,24z"></path>
+                </svg>
+            </div>
+            <p class="text-gray-200 text-sm text-center  max-w-xs mx-auto">
+                Avec une maîtrise technique des CMS comme WordPress, je crée des sites personnalisés avec une architecture intelligente pour des solutions complètes et efficaces.
+            </p>
+        </div>
+    </div>
+</div>
+    </section>
+    <!--End skills section-->
+    <div class="lg:pt-32 lg:pb-40 pt-24 pb-32">
+    </div>
+
+    <!--Technologie section-->
+    <section>
+      <div>
+    <div class="fade-in">
+     <h2 class="font-extrabold text-center lg:text-6xl text-2xl">TECHNOLOGIES </h2>
+      <p class="text-center font-medium text-xl pt-8">Voici quelques technologies avec lesquelles j'ai travaillé <br> récemment</p>
+    </div>
+    <div class="text-center pt-12">
+     <div class="pb-8 fade-in flex flex-wrap justify-center lg:justify-center gap-4">
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hoveslate-600">HTML</span>
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">CSS</span>
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">JavaScript</span>
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">TypeScript</span>
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">React</span>
+     </div>
+     <div class="fade-in pb-8 flex flex-wrap justify-center lg:justify-center gap-4">
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">Node JS</span>
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">MySQL</span>
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">PostgreSQL</span>
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">WordPress</span>
+     </div>
+     <div class="fade-in pb-8 flex flex-wrap justify-center lg:justify-center gap-4">
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">Tailwind</span>
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">Bootstrapp</span>
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">Adonis JS</span>
+       <span class="darker-slate text-white shadow-xl px-4 py-2 rounded-full text-sm font-semibold transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:bg-slate-600">Figma</span>
+     </div>
+   </div>
+   
+  </div>
+    </section>
+    <!--End Technologie section-->
+    <div class="lg:pt-32 lg:pb-40 pt-24 pb-32">
+    </div>
+
+    <!--artwork section-->
+    <section class="">
+     <div class="text-center fade-in">
+       <h2 class="lg:text-8xl text-6xl pb-4 font-cookie font-black text-outline-white">
+         Envie de <br>découvrir mes <br> œuvres ?  
+       </h2>
+       <div class="pt-8">
+          <a href="/projets" class="accent p-4 hover:bg-orange-800 transition duration-300 ease-in-out">
+            <span class="font-bold">CLIQUEZ ICI</span>
+         </a>
+       </div>
+     </div>
+    </section>
+    <!--End artwork section-->
+    <div class="lg:pt-32 lg:pb-40 pt-24 pb-32">
+    </div>
+    
+    <!-- form section-->
+    <section class="py-16" id="form">
+      <div class="container fade-in mx-auto px-6">
+    <h2 class="lg:text-6xl text-xl font-bold mb-4 text-center">Envoyez un message !</h2>
+    <p class="text-center text-gray-200 mb-12">Vous avez une question ou une proposition, ou vous souhaitez simplement <br> dire bonjour ? Allez-y</p>
+    
+    <form id="contact-form" class="max-w-3xl fade-in mx-auto pt-8" action="https://formspree.io/f/xyzjrzdr" method="POST" accept-charset="UTF-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <div>
+                <label class="block text-gray-200 text-base font-semibold mb-2">VOTRE NOM</label>
+                <input name="name" type="text" placeholder="Entrez votre nom" class="input-field w-full font-semibold py-2 text-white text-base">
+            </div>
+            <div>
+                <label class="block text-gray-200 text-base font-semibold mb-2">VOTRE EMAIL</label>
+                <input name="email" type="email" placeholder="Entrez votre email" class="input-field w-full py-2 font-semibold text-white text-base">
+            </div>
+        </div>
+        <div class="mb-8">
+            <label class="block text-gray-200 text-base font-semibold mb-2">VOTRE MESSAGE</label>
+            <textarea name="message" placeholder="Écrivez votre message" rows="4" class="resize-none input-field w-full font-semibold py-2 text-white text-base"></textarea>
+        </div>
+        <button type="submit" class="w-full accent hover:bg-orange-800 transition duration-300 ease-in-out font-bold text-white py-3">ENVOYEZ VOTRE MESSAGE</button>
+    </form>
+</div>
+    </section>
+     <!--End form section-->
+
+   <div class="lg:pt-28 lg:pb-40 pt-24 pb-32">
+   </div>
+
+    <!--contact and socials network section-->
+      <section class="text-center">
+            <!-- Logo -->
+   <div class="mb-6 text-center lg:pr-12">
+    <img src="/images/Logo_dev.svg" alt="mon logo" class="w-64 mx-auto">
+ </div>
+
+ <!-- Contact -->
+  <div class="mb-8">
+     <h2 class="text-xl font-extrabold mb-2">CONTACTEZ-MOI</h2>
+     <p class="text-lg text-gray-200">akasha.rayonnant@gmail.com</p>
+  </div>
+
+ <!-- Réseaux sociaux -->
+ <div>
+   <h2 class="text-xl font-extrabold mb-4">SUIVEZ-MOI SUR</h2>
+     <div class="flex justify-center items-center">
+  <!-- Instagram -->
+    <a href="https://www.instagram.com/rayonnant_akasha/" target="_blank" class="hover:scale-105 transition">
+     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55" viewBox="0,0,256,256">
+       <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+     </svg>
+    </a>
+  <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/rayonnant-nyonsa-386b41274/" target="_blank" class="hover:scale-105 transition">
+     <svg class="themed-stroke-icon" width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg"><desc>Rayonnant Nyonsa profil Linkdin</desc><path d="M18.7311 45.3333V26.6667M56.0645 21.3333V42.6667C56.0645 46.2029 54.6597 49.5943 52.1592 52.0948C49.6587 54.5952 46.2673 56 42.7311 56H21.3978C17.8616 56 14.4702 54.5952 11.9697 52.0948C9.46921 49.5943 8.06445 46.2029 8.06445 42.6667V21.3333C8.06445 17.7971 9.46921 14.4057 11.9697 11.9052C14.4702 9.40476 17.8616 8 21.3978 8H42.7311C46.2673 8 49.6587 9.40476 52.1592 11.9052C54.6597 14.4057 56.0645 17.7971 56.0645 21.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M29.3978 45.3333V36.6667M29.3978 36.6667V26.6667M29.3978 36.6667C29.3978 26.6667 45.3978 26.6667 45.3978 36.6667V45.3333M18.7311 18.6933L18.7578 18.664" stroke="white" stroke-width="1.5" stroke-linecap="round" 
+       stroke-linejoin="round"></path></svg>
+    </a>
+</div>
+</div>
+      </section>
+      
+    <div class="lg:pt-32 lg:pb-40 pt-24 pb-32">
+    </div>
+  </main>
+
+  <!--footer-->
+  <footer>
+    <div class="text-center p-6">
+    <h2 class="lg:text-xl text-md font-semibold">Designed & Built by Rayonnant Nyonsa</h2>
+    <h2 class="lg:text-xl text-md font-semibold">Copyright © 2025 Rayonnant Nyonsa</h2>
+  </div>
+  </footer>
+   <!-- Scroll to top button -->
+   <button class="scroll-top hidden bg-transparent border p-4 menu-link text-white"
+        data-target="#top">
+  <i class="fas fa-arrow-up hover:text-accent transition duration-300 ease-in-out"></i>
+</button>
+<div
+  id="notification"
+  class="hidden fixed top-5 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-md shadow-md text-sm flex items-center space-x-2 z-50 transition-all duration-500"
+>
+ <span id="notification-icon">✅</span>
+  <span id="notification-text">Message envoyé avec succès !</span>
+ <script src="scricpt.js"></script>
+</body>
+</html>
+</body>
+</html>

@@ -1,0 +1,100 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+    --dark-slate: #2D383C;
+    --darker-slate: #38464B;
+    --accent: #f25834;
+    --light-accent: #ca2e13;
+    --text-color: #f0f0f0;
+}
+
+body{
+    background-color: var(--dark-slate);
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: var(--dark-slate);
+    
+}
+
+        .input-field {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid #4a5568;
+            background-color: transparent;
+        }
+        
+        .input-field:focus {
+            outline: none;
+            border-bottom-color: #ff5940;
+        }
+        
+        .scroll-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+
+
+.darker-slate {
+    background-color: var(--darker-slate);
+}
+
+/* Accent color for buttons and highlights */
+
+.accent {
+    background-color: var(--accent);
+}
+
+.accent:hover {
+    background-color: var(--light-accent);
+}
+
+.text-accent {
+    color: var(--accent);
+}
+
+.color-accent {
+    color: var(--accent);
+}
+
+.text-accent:hover {
+    color: var(--text-color);
+}
+
+.menu-link {
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-link:hover {
+    color: var(--accent);
+}
+
+.text-outline-white {
+  color: transparent;
+  -webkit-text-stroke: 1px rgb(220, 220, 220);
+}
+
+/* Fade-in animation for elements */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.ancre-link {
+  transition: all 300ms ease-in-out;
+}
