@@ -3,9 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Mes Projets </title>
 </head>
-<body>
-    
+
+<body class="text-white scroll-smooth">
+    <header class="fixed top-0 left-0 w-full z-10 bg-dark-slate flex items-center justify-between lg:px-32 px-2 py-2" id="header">
+       <div>
+    <a href="/accueil.html">
+      <img src="/images/Logo_dev.svg" alt="mon logo" class="lg:w-52 w-36">
+    </a>
+  </div>
+  
+  <!-- Menu principal -->
+  <nav class="hidden sm:flex justify-between gap-4 items-center">
+    <a href="/accueil.html" class="menu-link">Accueil</a>
+    <a href="#a-propos" class="menu-link ancre-link">À propos</a>
+    <a href="/projet.html" class="menu-link ancre-link">Mes projets</a>
+  </nav>
+  
+  <!-- Menu hamburger (mobile only) -->
+  <div class="sm:hidden">
+    <button id="mobile-menu-toggle">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
+        <path d="M4 5h16M4 12h16M4 19h16" stroke="white" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Menu mobile -->
+  <nav id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-dark-slate text-white flex flex-col items-center justify-center gap-8 transform -translate-y-full transition-transform duration-500 ease-in-out z-10 sm:hidden">
+       <!-- Bouton de fermeture -->
+     <button id="mobile-menu-close" class="absolute top-4 right-4 text-white hover:text-accent transition">
+       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+       <path stroke-linecap="round" stroke-width="4" d="M6 18L18 6M6 6l12 12" />
+       </svg>
+     </button>
+    <a href="#accueil" class="text-2xl menu-link mobile-link">Accueil</a>
+    <a href="#competences" class="text-2xl menu-link mobile-link">Compétences</a>
+    <a href="#a-propos" class="text-2xl menu-link mobile-link">À propos</a>
+    <a href="/document/CV_Rayonnant_Nyonsa.pdf" target="_blank" rel="noopener" rel="noopener" class="text-accent pt-2 text-2xl font-bold flex items-center hover:text-white transition duration-300 ease-in-out">
+      MON CV
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" 
+        role="img" class="iconify iconify--iconoir" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" 
+        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" 
+        d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2M7 7h10M7 12h10M7 17h6" class="mb-px"></path>
+      </svg>
+    </a>
+  </nav>
+    </header>
+
+     <div class="lg:pt-32 lg:pb-40 pt-24 pb-32">
+     </div>
+    <main class="lg:px-32 px-2 md:px-8">
+       <section class="px-2">
+        <div class="flex flex-col items-center">
+           <h2 class="lg:text-5xl text-3xl text-center font-bold lg:w-[45%] pb-12">
+               Réalisation d’un clone de Twitter
+           </h2>
+            <div class="darker-slate lg:text-start lg:w-[60%] fade-in lg:p-6 p-6 shadow-xl backdrop-opacity-60">
+              <p class="text-center text-md lg:text-xl pb-4">Dans le cadre de mon projet chef-d'œuvre de fin d’étude, 
+                 j’ai conçu et développé un clone de Twitter (actuellement appelé X) en utilisant le framework JavaScript <span class="text-accent">AdonisJS</span>.
+              </p>
+              <p class="text-center text-md lg:text-xl pb-4">Le site intègre les principales fonctionnalités de la plateforme originale, notamment : La création de compte et l’authentification sécurisée, La publication de tweets, avec ou sans image,
+                 La possibilité de liker et commenter les publications, La modification du profil utilisateur et de la biographie.
+              </p>
+              <p class="text-center text-md lg:text-xl">Bien que le projet soit encore en cours de développement, 
+                 la majorité des fonctionnalités essentielles sont déjà opérationnelles. 
+              </p>
+            <div class="pt-8  flex justify-center">
+             <a href="http://tweeter-clone-with-adonis-js-ray-production.up.railway.app" target="_blank"  class="accent transition duration-300 ease-in-out align-center p-4  ">
+                 <span class="font-bold">VOIR LE SITE</span>
+             </a>
+           </div>
+           </div>
+           
+        </div>
+
+       </section>
+     <div class="lg:pt-32 lg:pb-40 pt-24 pb-32">
+     </div>
+
+     <section>
+               <div class="flex flex-col items-center">
+           <h2 class="lg:text-5xl text-3xl text-center font-bold lg:w-[55%] pb-12">
+               Conception de la boutique en ligne Fashion 
+           </h2>
+            <div class="bg-darker-slate lg:text-start lg:w-[60%] fade-in lg:p-6 p-6 shadow-xl backdrop-opacity-60">
+              <p class="text-center text-md lg:text-xl pb-4">Le but de ce projet était la prise en main du CMS <span class="text-accent">WordPress</span> en concevant une boutique en ligne.
+              </p>
+              <p class="text-center text-md lg:text-xl pb-4">Le site intègre les principales fonctionnalités d'une boutique en ligne, notamment : Un thème installé,
+               Les configurations de base faite, Les pages (Accueil, À propos, Nos actualités, Contact). Un menu de navigation fonctionnel. Le logo de Fashion sur l'entête, Les extensions standard installé et enfin
+               L'icône de de la boutique Fashion sur les onglets de navigation sur les pages qui affichent le site
+              </p>
+              <p class="text-center text-md lg:text-xl">Bien que le projet soit encore en cours de développement, 
+                 la majorité des fonctionnalités essentielles sont déjà opérationnelles. 
+              </p>
+            <div class="pt-8  flex justify-center">
+             <a href="https://dev-fashion-akasha.pantheonsite.io/" target="_blank"  class="accent align-center p-4 hover:bg-orange-800 transition duration-300 ease-in-out">
+                 <span class="font-bold">VOIR LE SITE</span>
+             </a>
+           </div>
+           </div>
+           
+        </div>
+     </section>
+     <div class="lg:pt-32 lg:pb-40 pt-24 pb-32">
+     </div>
+      <section class="text-center">
+            <!-- Logo -->
+   <div class="mb-6 text-center lg:pr-12">
+    <img src="/images/Logo_dev.svg" alt="mon logo" class="w-64 mx-auto">
+ </div>
+
+ <!-- Contact -->
+  <div class="mb-8">
+     <h2 class="text-xl font-extrabold mb-2">CONTACTEZ-MOI</h2>
+     <p class="text-lg text-gray-200">akasha.rayonnant@gmail.com</p>
+  </div>
+
+ <!-- Réseaux sociaux -->
+ <div>
+   <h2 class="text-xl font-extrabold mb-4">SUIVEZ-MOI SUR</h2>
+     <div class="flex justify-center items-center">
+  <!-- Instagram -->
+    <a href="https://www.instagram.com/rayonnant_akasha/" target="_blank" class="hover:scale-105 transition">
+     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="55" viewBox="0,0,256,256">
+       <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+     </svg>
+    </a>
+  <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/rayonnant-nyonsa-386b41274/" target="_blank" class="hover:scale-105 transition">
+     <svg class="themed-stroke-icon" width="65" height="64" viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg"><desc>Rayonnant Nyonsa profil Linkdin</desc><path d="M18.7311 45.3333V26.6667M56.0645 21.3333V42.6667C56.0645 46.2029 54.6597 49.5943 52.1592 52.0948C49.6587 54.5952 46.2673 56 42.7311 56H21.3978C17.8616 56 14.4702 54.5952 11.9697 52.0948C9.46921 49.5943 8.06445 46.2029 8.06445 42.6667V21.3333C8.06445 17.7971 9.46921 14.4057 11.9697 11.9052C14.4702 9.40476 17.8616 8 21.3978 8H42.7311C46.2673 8 49.6587 9.40476 52.1592 11.9052C54.6597 14.4057 56.0645 17.7971 56.0645 21.3333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M29.3978 45.3333V36.6667M29.3978 36.6667V26.6667M29.3978 36.6667C29.3978 26.6667 45.3978 26.6667 45.3978 36.6667V45.3333M18.7311 18.6933L18.7578 18.664" stroke="white" stroke-width="1.5" stroke-linecap="round" 
+       stroke-linejoin="round"></path></svg>
+    </a>
+</div>
+</div>
+      </section>
+    </main>
+
+    <div class="lg:pt-32 lg:pb-40 pt-24 pb-32">
+    </div>
+      <!--footer-->
+  <!--footer-->
+  <footer>
+    <div class="text-center p-6">
+    <h2 class="lg:text-xl text-md font-semibold">Designed & Built by Rayonnant Nyonsa</h2>
+    <h2 class="lg:text-xl text-md font-semibold">Copyright © 2025 Rayonnant Nyonsa</h2>
+  </div>
+  </footer>
+   <!-- Scroll to top button -->
+   <button class="scroll-top hidden bg-transparent border p-4 hover:border-accent menu-link transition duration-300 ease-in-out text-white"
+        data-target="#top">
+      <i class="fas fa-arrow-up hover:text-accent transition duration-300 ease-in-out"></i>
+   </button>
+ <script src="scricpt.js"></script>
 </body>
+
+
 </html>
